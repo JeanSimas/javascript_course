@@ -1,3 +1,4 @@
+// Creating the objects that I will use
 const john = {
     fullName: "John Sauro",
     mass: 75.3,
@@ -20,9 +21,11 @@ const mark = {
     }
 };
 
-
+// Calculating the BMIs
 john.calculateBMI();
 mark.calculateBMI();
+
+// Comparing the BMIs
 mark.bmi == john.bmi ? console.log(`${john.fullName} and ${mark.fullName} has the same BMI: ${john.bmi}`) :
     mark.bmi > john.bmi ? console.log(`${mark.fullName} has the greater BMI: ${mark.bmi}`) :
     console.log(`${john.fullName} has the greater BMI: ${john.bmi}`);
